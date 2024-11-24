@@ -1,3 +1,9 @@
+import { InputForm } from "../Components/InputForm";
+
 export const Contact = () => {
-  return <>Contact Form osv</>;
+  return (
+    <>
+      <InputForm />
+    </>
+  );
 };
