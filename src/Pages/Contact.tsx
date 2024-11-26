@@ -1,4 +1,4 @@
-import { InputForm } from "../Components/InputForm";
+import { InputForm } from "../components/InputForm";
 
 export const Contact = () => {
   return (
