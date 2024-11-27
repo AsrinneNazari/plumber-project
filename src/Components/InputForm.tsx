@@ -29,6 +29,7 @@ export const InputForm = () => {
       <div className="space-y-12">
         <h2 className="text-base/7 font-semibold text-gray-900">
           Kontakta oss
+          
         </h2>
         <p className="mt-1 text-sm/6 text-gray-600">
           Fyll i formuläret här nedan så kontaktar vi dig så fort vi kan.
@@ -39,15 +40,13 @@ export const InputForm = () => {
               Namn:
             </label>
             <div className="mt-2">
-              <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-indigo-600 sm:max-w-md">
-                <input
-                  type="text"
-                  name="name"
-                  value={inputValue.name}
-                  onChange={handleInputChange}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-indigo-600 sm:text-sm"
-                />
-              </div>
+              <input
+                type="text"
+                name="name"
+                value={inputValue.name}
+                onChange={handleInputChange}
+                className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-4 focus-within:ring-indigo-500 sm:max-w-md p-2"
+              />
             </div>
           </div>
 
@@ -56,15 +55,13 @@ export const InputForm = () => {
               Telefonnummer:
             </label>
             <div className="mt-2">
-              <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-indigo-600 sm:max-w-md">
-                <input
-                  type="number"
-                  name="number"
-                  value={inputValue.number}
-                  onChange={handleInputChange}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-indigo-600 sm:text-sm"
-                />
-              </div>
+              <input
+                type="number"
+                name="number"
+                value={inputValue.number}
+                onChange={handleInputChange}
+                className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-4 focus-within:ring-indigo-500 sm:max-w-md p-2"
+              />
             </div>
           </div>
 
@@ -73,15 +70,13 @@ export const InputForm = () => {
               E-post:
             </label>
             <div className="mt-2">
-              <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-indigo-600 sm:max-w-md">
-                <input
-                  type="email"
-                  name="email"
-                  value={inputValue.email}
-                  onChange={handleInputChange}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-indigo-600 sm:text-sm"
-                />
-              </div>
+              <input
+                type="email"
+                name="email"
+                value={inputValue.email}
+                onChange={handleInputChange}
+                className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-4 focus-within:ring-indigo-500 sm:max-w-md p-2"
+              />
             </div>
           </div>
 
@@ -94,7 +89,7 @@ export const InputForm = () => {
                 name="message"
                 value={inputValue.message}
                 onChange={handleInputChange}
-                className="block w-full sm:max-w-md rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-indigo-600 sm:text-sm"
+                className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-4 focus-within:ring-indigo-500 sm:max-w-md p-2 min-h-40"
               ></textarea>
             </div>
           </div>
