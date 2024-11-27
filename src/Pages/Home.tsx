@@ -19,13 +19,18 @@ export const Home = () => {
   }, []);
   return (
     <>
-      <h2>Info</h2>
-
-      {textContent.length > 0 ? (
-        textContent.map((item, index) => <p key={index}>{item.content}</p>)
-      ) : (
-        <p>Laddar... :(</p>
-      )}
+      <div className="p-5 sm:p-10 mx-auto max-w-lg">
+        <div className="font-sans text-2xl p-4 font-medium">Din rörmokare i närheten!</div>
+        {textContent.length > 0 ? (
+          textContent.map((item, index) => (
+            <p className="font-sans text-base/7" key={index}>
+              {item.content}
+            </p>
+          ))
+        ) : (
+          <p>Laddar... :(</p>
+        )}
+      </div>
     </>
   );
 };
