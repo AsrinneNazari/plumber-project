@@ -16,8 +16,6 @@ export const useSupabase = <T>(baseData: string): [boolean, T | undefined] => {
         } else {
           setTextContent(data as T);
         }
-      } catch (error) {
-        console.error("Ett oväntat fel inträffade:", error);
       } finally {
         setLoading(false);
       }
