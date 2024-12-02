@@ -1,10 +1,11 @@
 import { FormEvent, useState } from "react";
+import { supabase } from "../services/supabaseClient";
 
 export const InputForm = () => {
   const startInput = {
     name: "",
-    number: "",
     email: "",
+    number: "",
     message: "",
   };
   const [inputValue, setInputValue] = useState(startInput);
@@ -19,19 +20,29 @@ export const InputForm = () => {
     }));
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setInputValue(startInput);
+
+    const { name, email, number, message } = inputValue;
+    try {
+      const { data, error } = await supabase
+        .from("FormSubmissions")
+        .insert({ name: name, email: email, number: number, message: message });
+      if (error) throw error;
+      console.log("Data lagrad:", data);
+    } catch (error) {
+      console.error("Något gick fel", error);
+    }
   };
 
   return (
     <form onSubmit={handleSubmit} className="p-5 sm:p-10 mx-auto max-w-lg">
       <div className="space-y-12">
-        <h2 className="text-base/7 font-semibold text-gray-900">
-          Kontakta oss
-          
+        <h2 className="text-base/8 font-semibold text-gray-900">
+          Kontakta oss/offertförfrågan
         </h2>
-        <p className="mt-1 text-sm/6 text-gray-600">
+        <p className="mt-1 text-sm/2 text-gray-600">
           Fyll i formuläret här nedan så kontaktar vi dig så fort vi kan.
         </p>
         <div className="border-b border-gray-900/10 pb-12 space-y-6">
@@ -45,7 +56,8 @@ export const InputForm = () => {
                 name="name"
                 value={inputValue.name}
                 onChange={handleInputChange}
-                className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-4 focus-within:ring-indigo-500 sm:max-w-md p-2"
+                required
+                className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-1 focus-within:ring-indigo-500 sm:max-w-md p-2"
               />
             </div>
           </div>
@@ -60,7 +72,8 @@ export const InputForm = () => {
                 name="number"
                 value={inputValue.number}
                 onChange={handleInputChange}
-                className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-4 focus-within:ring-indigo-500 sm:max-w-md p-2"
+                required
+                className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-1 focus-within:ring-indigo-500 sm:max-w-md p-2"
               />
             </div>
           </div>
@@ -75,7 +88,8 @@ export const InputForm = () => {
                 name="email"
                 value={inputValue.email}
                 onChange={handleInputChange}
-                className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-4 focus-within:ring-indigo-500 sm:max-w-md p-2"
+                required
+                className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-1 focus-within:ring-indigo-500 sm:max-w-md p-2"
               />
             </div>
           </div>
@@ -89,7 +103,8 @@ export const InputForm = () => {
                 name="message"
                 value={inputValue.message}
                 onChange={handleInputChange}
-                className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-4 focus-within:ring-indigo-500 sm:max-w-md p-2 min-h-40"
+                required
+                className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-1 focus-within:ring-indigo-500 sm:max-w-md p-2 min-h-40"
               ></textarea>
             </div>
           </div>
