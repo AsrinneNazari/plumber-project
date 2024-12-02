@@ -8,7 +8,7 @@ export const Services = () => {
     <>
       {loading && <h1>Loading..</h1>}
       <div className="font-sans text-base/6 p-7 sm:p-4 mx-auto max-w-lg">
-        <h2 className="text-xl">Våra tjänster</h2>
+        <h2 className="text-xl">Vi erbjuder:</h2>
         {data?.map((item, index) => (
           <section className=" sm:p-4 mx-auto max-w-lg" key={index}>
             <p className="font-bold"> {item.title}</p>
