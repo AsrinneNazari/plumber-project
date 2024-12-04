@@ -12,7 +12,7 @@ export const ConfirmationModal = ({ show, onClose }: IModal) => {
         <p>Meddelande skickat</p>
         <p>Vi återkommer till dig så fort som möjligt</p>
         <button
-          className="mt-4 px-4 py-2 bg-blue-500 text-white rounded"
+          className="w-full sm:w-auto inline-flex justify-center rounded-md bg-blue px-5 py-2 text-sm font-sans shadow-sm hover:bg-darkblue"
           onClick={onClose}
         >
           Stäng

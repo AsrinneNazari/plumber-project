@@ -17,7 +17,7 @@ export const Header = () => {
       <div className="flex justify-center items-center h-2/3">
         <Link
           to={"/contact"}
-          className="w-full sm:w-auto inline-flex justify-center rounded-md bg-indigo-600 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline focus:ring-2 focus:ring-indigo-600"
+          className="w-full sm:w-auto inline-flex justify-center rounded-md bg-blue px-5 py-2 text-sm font-sans shadow-sm hover:bg-darkblue"
         >
           Kontakta oss
         </Link>
