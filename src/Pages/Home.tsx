@@ -23,7 +23,7 @@ export const Home = () => {
             ))}
           </div>
         </div>
-        <div className=" flex-[1] border-l-2 pl-9 pt-10">
+        <div className=" flex-[1] border-l-2 borderlightgray pl-9 pt-10">
           <p className="font-semibold font-sans text-lx mb-3">
             Hej och välkommen till Mello Rör!
           </p>
