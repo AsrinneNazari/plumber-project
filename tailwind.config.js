@@ -2,15 +2,19 @@
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    colors:{
-    'blue': '#1fb6ff',
-    'darkblue': '#1f9eff' 
+    extend: {
+      colors: {
+        blue: "#1fb6ff",
+        darkblue: "#1f9eff",
+      },
+      borderColor: {
+        borderlightgray: "#d3dce6",
+      },
+      fontFamily: {
+        sans: ["sans-serif"],
+        serif: ["serif"],
+      },
     },
-    fontFamily: {
-      sans: ['sans-serif'],
-      serif: ['serif'],
-    },
-    extend: {},
   },
   plugins: [],
 };
