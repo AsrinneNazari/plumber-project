@@ -7,12 +7,9 @@ export default {
         blue: "#1fb6ff",
         darkblue: "#1f9eff",
       },
-      borderColor: {
-        borderlightgray: "#d3dce6",
-      },
       fontFamily: {
         sans: ["sans-serif"],
-        serif: ["serif"],
+        roboto: ["roboto"]
       },
     },
   },
