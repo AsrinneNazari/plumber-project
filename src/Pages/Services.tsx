@@ -7,10 +7,10 @@ export const Services = () => {
   return (
     <>
       {loading && <h1>Loading..</h1>}
-      <div className="font-sans text-base/6 p-7 sm:p-4 mx-auto max-w-lg">
-        <h2 className="text-xl">Vi erbjuder:</h2>
+      <div className="p-5 sm:p-5 mx-auto max-w-7xl flex flex-col">
+        <div className="font-sans text-3xl p-4 font-medium">Våra tjänster</div>
         {data?.map((item, index) => (
-          <section className=" sm:p-4 mx-auto max-w-lg" key={index}>
+          <section className=" sm:p-3 mx-auto max-w-2xl p-1" key={index}>
             <p className="font-bold"> {item.title}</p>
             {item.description}
           </section>
