@@ -6,7 +6,7 @@ import { Logo } from "./Logo";
 export const Header = () => {
   return (
     <>
-      <div className="sticky top-0 z-[1] mx-auto bg-white flex justify-between px-4 py-2 shadow-md">
+      <div className="sticky top-0 z-[1] mx-auto bg-white flex justify-between px-4 py-3 shadow-md">
         <Logo />
         <Nav />
       </div>

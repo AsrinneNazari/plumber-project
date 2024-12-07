@@ -9,16 +9,16 @@ interface INavLinkProps {
 export const NavLinks = ({ click }: INavLinkProps) => {
   return (
     <>
-      <NavLink to="/" className="hover:underline" onClick={click}>
+      <NavLink to="/" className="relative text-lg w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" onClick={click}>
         Hem
       </NavLink>
-      <NavLink to="/about" className="hover:underline" onClick={click}>
+      <NavLink to="/about" className="relative text-lg w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" onClick={click}>
         Om oss
       </NavLink>
-      <NavLink to="/services" className="hover:underline" onClick={click}>
+      <NavLink to="/services" className="relative text-lg w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" onClick={click}>
         Tjänster
       </NavLink>
-      <NavLink to="/contact" className="hover:underline" onClick={click}>
+      <NavLink to="/contact" className="relative text-lg w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" onClick={click}>
         Kontakta oss
       </NavLink>
     </>
