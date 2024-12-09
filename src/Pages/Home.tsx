@@ -32,7 +32,7 @@ export const Home = () => {
           <div>
             {data?.map((item, index) => (
               <p className="mb-4" key={index}>
-                {item.title !=="about" ? item.content : null}
+                {item.content}
               </p>
             ))}
           </div>
