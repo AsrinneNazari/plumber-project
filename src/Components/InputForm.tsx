@@ -2,6 +2,8 @@ import { FormEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { supabase } from "../services/supabaseClient";
 import { ConfirmationModal } from "./ConfirmationModal";
+import { ContactInfo } from "./ContactInfo";
+import { Button } from "./Button";
 
 export const InputForm = () => {
   const startInput = {
@@ -13,6 +15,10 @@ export const InputForm = () => {
   const [inputValue, setInputValue] = useState(startInput);
   const [showModal, setShowModal] = useState(false);
   const form = useRef<HTMLFormElement | null>(null);
+
+  const onClose = () =>{
+    setShowModal(false)
+  }
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -67,12 +73,7 @@ export const InputForm = () => {
   return (
     <>
       <div className="p-5 sm:p-5 mx-auto max-w-7xl flex flex-col lg:flex-row gap-10">
-        <div className="flex-[1] border-l-2 border-lightgray pl-9 pt-10 order-1 lg:order-2">
-          <p className="font-semibold font-fjalla text-lx mb-3 text-2xl">
-            Kontakta oss direkt
-          </p>
-          <p className="font-bold">Telefonnummer: 070-1234567</p>
-        </div>
+        <ContactInfo />
 
         <div className="flex-[2] order-2 lg:order-1">
           <div className="font-sans text-3xl p-4 font-medium">
@@ -97,7 +98,6 @@ export const InputForm = () => {
                     name="name"
                     value={inputValue.name}
                     onChange={handleInputChange}
-                    required
                     className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-1 focus-within:ring-indigo-500 sm:max-w-md p-2"
                   />
                 </div>
@@ -113,7 +113,6 @@ export const InputForm = () => {
                     name="number"
                     value={inputValue.number}
                     onChange={handleInputChange}
-                    required
                     className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-1 focus-within:ring-indigo-500 sm:max-w-md p-2"
                   />
                 </div>
@@ -129,7 +128,6 @@ export const InputForm = () => {
                     name="email"
                     value={inputValue.email}
                     onChange={handleInputChange}
-                    required
                     className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-1 focus-within:ring-indigo-500 sm:max-w-md p-2"
                   />
                 </div>
@@ -144,25 +142,19 @@ export const InputForm = () => {
                     name="message"
                     value={inputValue.message}
                     onChange={handleInputChange}
-                    required
                     className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-1 focus-within:ring-indigo-500 sm:max-w-md p-2 min-h-40"
                   ></textarea>
                 </div>
               </div>
 
               <div className="mt-6">
-                <button
-                  type="submit"
-                  className="w-full sm:w-auto inline-flex justify-center rounded-md bg-blue px-5 py-2 text-sm font-sans shadow-sm hover:bg-darkblue"
-                >
-                  Skicka
-                </button>
+                <Button buttonText="Skicka" type="submit" />
               </div>
             </div>
           </form>
           <ConfirmationModal
             show={showModal}
-            onClose={() => setShowModal(false)}
+            onClose={onClose}
           />
         </div>
       </div>
