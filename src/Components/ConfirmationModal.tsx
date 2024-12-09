@@ -1,11 +1,11 @@
 import { Button } from "./Button";
 
-interface IModal {
+interface IModalProps {
   show: boolean;
   onClose: () => void;
 }
 
-export const ConfirmationModal = ({ show, onClose }: IModal) => {
+export const ConfirmationModal = ({ show, onClose }: IModalProps) => {
   if (!show) return null;
 
   return (
