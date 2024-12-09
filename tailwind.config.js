@@ -9,7 +9,8 @@ export default {
       },
       fontFamily: {
         sans: ["sans-serif"],
-        roboto: ["roboto"]
+        roboto: ["roboto"],
+        fjalla: ["Fjalla One"]
       },
     },
   },
