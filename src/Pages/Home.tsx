@@ -1,6 +1,7 @@
 import { ITextContent } from "../models/ITextContent";
 import { useSupabase } from "../hooks/useSupabase";
 import LSlogo from "./../img/LFlogo.png";
+import { Title } from "../components/Title";
 
 export const Home = () => {
   const [loading, data] = useSupabase<ITextContent[]>("TextContent");
@@ -24,16 +25,20 @@ export const Home = () => {
         </div>
 
         <div className="flex-[2] order-2 lg:order-1">
-          <div className="font-sans text-3xl p-4 font-medium">
-            Din rörmokare i närheten!
-          </div>
+        <Title titleText="Din rörmokare i närheten"/>
 
           {loading && <h1>Loading..</h1>}
           <div>
             {data?.map((item, index) => (
               <p className="mb-4" key={index}>
-                {item.content}
+                {item.title !== "about" ? item.content : null}
               </p>
+            ))}
+            <p className="text-lg font-semibold">Om oss</p>
+            {data?.map((item, index) => (
+              <section className="mb-4" key={index}>
+                {item.title === "about" ? item.content : null}
+              </section>
             ))}
           </div>
         </div>

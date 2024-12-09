@@ -4,6 +4,7 @@ import { supabase } from "../services/supabaseClient";
 import { ConfirmationModal } from "./ConfirmationModal";
 import { ContactInfo } from "./ContactInfo";
 import { Button } from "./Button";
+import { Title } from "./Title";
 
 export const InputForm = () => {
   const startInput = {
@@ -76,16 +77,14 @@ export const InputForm = () => {
         <ContactInfo />
 
         <div className="flex-[2] order-2 lg:order-1">
-          <div className="font-sans text-3xl p-4 font-medium">
-            Kontakta oss/offertförfrågan
-          </div>
+          <Title titleText="Kontakta oss / offertförfrågan"/>
           <form
             ref={form}
             onSubmit={handleSubmit}
             className="p-5 sm:p-10 mx-auto max-w-lg"
           >
             <div className="space-y-12">
-              <p className="mt-3 text-sm/2 text-gray-600">
+              <p className="mt-1 text-sm/2 text-gray-600">
                 Fyll i formuläret här nedan så kontaktar vi dig så fort vi kan.
               </p>
               <div>
@@ -96,6 +95,7 @@ export const InputForm = () => {
                   <input
                     type="text"
                     name="name"
+                    required
                     value={inputValue.name}
                     onChange={handleInputChange}
                     className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-1 focus-within:ring-indigo-500 sm:max-w-md p-2"
@@ -111,6 +111,7 @@ export const InputForm = () => {
                   <input
                     type="number"
                     name="number"
+                    required
                     value={inputValue.number}
                     onChange={handleInputChange}
                     className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-1 focus-within:ring-indigo-500 sm:max-w-md p-2"
@@ -126,6 +127,7 @@ export const InputForm = () => {
                   <input
                     type="email"
                     name="email"
+                    required
                     value={inputValue.email}
                     onChange={handleInputChange}
                     className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-1 focus-within:ring-indigo-500 sm:max-w-md p-2"
@@ -140,6 +142,7 @@ export const InputForm = () => {
                 <div className="mt-2">
                   <textarea
                     name="message"
+                    required
                     value={inputValue.message}
                     onChange={handleInputChange}
                     className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-1 focus-within:ring-indigo-500 sm:max-w-md p-2 min-h-40"
