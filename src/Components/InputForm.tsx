@@ -5,6 +5,7 @@ import { ConfirmationModal } from "./ConfirmationModal";
 import { ContactInfo } from "./ContactInfo";
 import { Button } from "./Button";
 import { Title } from "./Title";
+import { Label } from "./Label";
 
 export const InputForm = () => {
   const startInput = {
@@ -88,9 +89,7 @@ export const InputForm = () => {
                 Fyll i formuläret här nedan så kontaktar vi dig så fort vi kan.
               </p>
               <div>
-                <label className="block text-sm font-medium text-gray-900">
-                  Namn:
-                </label>
+              <Label labelText="Namn:"/>
                 <div className="mt-2">
                   <input
                     type="text"
@@ -104,9 +103,7 @@ export const InputForm = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-900">
-                  Telefonnummer:
-                </label>
+              <Label labelText="Telefonnummer:"/>
                 <div className="mt-2">
                   <input
                     type="number"
@@ -120,9 +117,7 @@ export const InputForm = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-900">
-                  E-post:
-                </label>
+              <Label labelText="Epost:"/>
                 <div className="mt-2">
                   <input
                     type="email"
@@ -136,9 +131,7 @@ export const InputForm = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-900">
-                  Meddelande:
-                </label>
+                <Label labelText="Meddelande:"/>
                 <div className="mt-2">
                   <textarea
                     name="message"
