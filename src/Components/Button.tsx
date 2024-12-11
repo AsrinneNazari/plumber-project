@@ -9,7 +9,7 @@ interface IButtonProps {
 
 export const Button = ({ buttonText, type, to, click }: IButtonProps) => {
   const buttonStyle =
-    "w-full sm:w-auto inline-flex justify-center rounded-md bg-blue px-5 py-2 text-sm font-sans shadow-sm hover:bg-darkblue";
+    "w-32 max-w-fit sm:w-auto inline-flex justify-center rounded bg-blue px-5 py-2 text-sm font-sans shadow-sm hover:bg-darkblue";
 
   if (to) {
     return (
