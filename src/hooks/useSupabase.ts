@@ -25,3 +25,4 @@ export const useSupabase = <T>(baseData: string): [boolean, T | undefined] => {
   }, [baseData]);
   return [loading, textContent];
 };
+ //credit: https://github.com/sebastiantegel/fed23s-js-ext/blob/main/react/4-react-custom-hooks/src/hooks/useFetch.ts 
