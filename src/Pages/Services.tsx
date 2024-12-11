@@ -8,7 +8,7 @@ export const Services = () => {
 
   return (
     <>
-      <div className="p-5 sm:p-5 mx-auto max-w-7xl flex flex-col lg:flex-row">
+      <div className="p-5 sm:p-5 mx-auto max-w-7xl flex flex-col lg:flex-row gap-10">
         <ContactInfo />
         <div className="flex-[2] order-2 lg:order-1">
           <Title titleText="Våra tjänster" />
