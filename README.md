@@ -9,6 +9,20 @@ I came up with this idea after my friend told me that her brother, who owns a pl
 
 This project will create a simple and clear website that shows what the plumbing company offers and makes it easy for customers to get in touch. It will help the business be more visible online, attract more clients, and give them an easy way to update the site with new information when needed.
 
+<h2>Target audience</h2>
+The target audience for this project includes homeowners, property managers, and business owners who need plumbing services. They are interested because they often deal with issues like leaks, clogs, or broken pipes and need a trustworthy plumber to fix them quickly. This website will help these potential clients easily find information about the company and contact them for help.
+
+<h2>Goal</h2>
+
+The goal is to enhance my skills as a frontend developer and deliver a fully functional, responsive website for the plumbing company. By the end of the project, the website should be ready for use and meet all planned features.
+
+The website will serve as a resource for homeowners and property managers looking for plumbing services. It will provide clear information about the company, showcase its services, and include a contact form to make it easy for users to request help.
+
+<h2>Site map</h2>
+![image](https://github.com/user-attachments/assets/69a81e7d-e6e4-4969-a9ac-5283262f7b69)
+
+
+
 
 
 
