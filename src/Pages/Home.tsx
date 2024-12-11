@@ -25,7 +25,7 @@ export const Home = () => {
         </div>
 
         <div className="flex-[2] order-2 lg:order-1">
-        <Title titleText="Din rörmokare i närheten"/>
+          <Title titleText="Din rörmokare i närheten" />
 
           {loading && <h1>Loading..</h1>}
           <div>

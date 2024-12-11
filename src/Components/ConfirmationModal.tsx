@@ -13,9 +13,9 @@ export const ConfirmationModal = ({ show, onClose }: IModalProps) => {
       <div className="bg-white p-9 rounded shadow-lg">
         <p>Meddelande skickat</p>
         <p className="">Vi återkommer till dig så fort som möjligt!</p>
-      <div className="mt-3">
-        <Button click={onClose} buttonText="Stäng"/>
-        </div>  
+        <div className="mt-3">
+          <Button click={onClose} buttonText="Stäng" />
+        </div>
       </div>
     </div>
   );

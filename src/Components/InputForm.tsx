@@ -18,9 +18,9 @@ export const InputForm = () => {
   const [showModal, setShowModal] = useState(false);
   const form = useRef<HTMLFormElement | null>(null);
 
-  const onClose = () =>{
-    setShowModal(false)
-  }
+  const onClose = () => {
+    setShowModal(false);
+  };
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -78,7 +78,7 @@ export const InputForm = () => {
         <ContactInfo />
 
         <div className="flex-[2] order-2 lg:order-1">
-          <Title titleText="Kontakta oss / offertförfrågan"/>
+          <Title titleText="Kontakta oss / offertförfrågan" />
           <form
             ref={form}
             onSubmit={handleSubmit}
@@ -89,7 +89,7 @@ export const InputForm = () => {
                 Fyll i formuläret här nedan så kontaktar vi dig så fort vi kan.
               </p>
               <div>
-              <Label labelText="Namn:"/>
+                <Label labelText="Namn:" />
                 <div className="mt-2">
                   <input
                     type="text"
@@ -103,7 +103,7 @@ export const InputForm = () => {
               </div>
 
               <div>
-              <Label labelText="Telefonnummer:"/>
+                <Label labelText="Telefonnummer:" />
                 <div className="mt-2">
                   <input
                     type="number"
@@ -117,7 +117,7 @@ export const InputForm = () => {
               </div>
 
               <div>
-              <Label labelText="Epost:"/>
+                <Label labelText="Epost:" />
                 <div className="mt-2">
                   <input
                     type="email"
@@ -131,7 +131,7 @@ export const InputForm = () => {
               </div>
 
               <div>
-                <Label labelText="Meddelande:"/>
+                <Label labelText="Meddelande:" />
                 <div className="mt-2">
                   <textarea
                     name="message"
@@ -148,10 +148,7 @@ export const InputForm = () => {
               </div>
             </div>
           </form>
-          <ConfirmationModal
-            show={showModal}
-            onClose={onClose}
-          />
+          <ConfirmationModal show={showModal} onClose={onClose} />
         </div>
       </div>
     </>
