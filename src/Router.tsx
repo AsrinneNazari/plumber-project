@@ -6,7 +6,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
-export const router = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
@@ -28,3 +28,4 @@ export const router = createBrowserRouter([
     errorElement: <NotFound />,
   },
 ]);
+export default router
