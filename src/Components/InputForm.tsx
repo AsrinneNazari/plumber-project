@@ -7,7 +7,7 @@ import ConfirmationModal from "./ConfirmationModal";
 import Label from "./Label";
 import Title from "./Title";
 
-const InputForm = () => {
+export const InputForm = () => {
   const startInput = {
     name: "",
     email: "",
