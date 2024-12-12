@@ -1,4 +1,4 @@
-const ContactInfo = () => {
+export const ContactInfo = () => {
   return (
     <>
       <div className="flex-[1] border-l-2 border-lightgray pl-9 pt-10 order-1 lg:order-2">

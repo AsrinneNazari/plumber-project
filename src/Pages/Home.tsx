@@ -3,7 +3,7 @@ import Title from "../components/Title";
 import useSupabase from "../hooks/useSupabase";
 import ITextContent from "../models/ITextContent";
 
-const Home = () => {
+export const Home = () => {
   const [loading, data] = useSupabase<ITextContent[]>("TextContent");
 
   return (

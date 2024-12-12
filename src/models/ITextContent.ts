@@ -1,4 +1,4 @@
-interface ITextContent {
+export interface ITextContent {
   id: number;
   title: string;
   content: string;

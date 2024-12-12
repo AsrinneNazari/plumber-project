@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../services/supabaseClient";
 
-const useSupabase = <T>(baseData: string): [boolean, T | undefined] => {
+export const useSupabase = <T>(baseData: string): [boolean, T | undefined] => {
   const [textContent, setTextContent] = useState<T>();
   const [loading, setLoading] = useState(false);
 

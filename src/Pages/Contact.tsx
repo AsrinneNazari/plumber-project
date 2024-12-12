@@ -1,6 +1,6 @@
 import InputForm from "../components/InputForm";
 
-const Contact = () => {
+export const Contact = () => {
   return (
     <>
       <InputForm />

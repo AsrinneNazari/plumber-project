@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const Logo = () => {
+export const Logo = () => {
   /* Future logo here! */
   return (
     <>
