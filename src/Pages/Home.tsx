@@ -3,7 +3,7 @@ import Title from "../components/Title";
 import useSupabase from "../hooks/useSupabase";
 import ITextContent from "../models/ITextContent";
 
-export const Home = () => {
+const Home = () => {
   const [loading, data] = useSupabase<ITextContent[]>("TextContent");
 
   return (
@@ -46,3 +46,4 @@ export const Home = () => {
     </>
   );
 };
+export default Home
