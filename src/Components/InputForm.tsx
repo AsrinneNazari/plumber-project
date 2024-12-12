@@ -1,13 +1,13 @@
 import { FormEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { supabase } from "../services/supabaseClient";
-import { ConfirmationModal } from "./ConfirmationModal";
-import { ContactInfo } from "./ContactInfo";
-import { Button } from "./Button";
-import { Title } from "./Title";
-import { Label } from "./Label";
+import ContactInfo from "./ContactInfo";
+import Button from "./Button";
+import ConfirmationModal from "./ConfirmationModal";
+import Label from "./Label";
+import Title from "./Title";
 
-export const InputForm = () => {
+const InputForm = () => {
   const startInput = {
     name: "",
     email: "",
@@ -154,3 +154,4 @@ export const InputForm = () => {
     </>
   );
 };
+export default InputForm;

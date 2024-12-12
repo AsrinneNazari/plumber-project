@@ -1,5 +1,5 @@
-import { useSupabase } from "../hooks/useSupabase";
-import { ITextContent } from "../models/ITextContent";
+import useSupabase from "../hooks/useSupabase";
+import ITextContent from "../models/ITextContent";
 
 export const About = () => {
   const [loading, data] = useSupabase<ITextContent[]>("TextContent");

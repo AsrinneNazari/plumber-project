@@ -1,7 +1,7 @@
-import { ITextContent } from "../models/ITextContent";
-import { useSupabase } from "../hooks/useSupabase";
 import LSlogo from "./../img/LFlogo.png";
-import { Title } from "../components/Title";
+import Title from "../components/Title";
+import useSupabase from "../hooks/useSupabase";
+import ITextContent from "../models/ITextContent";
 
 export const Home = () => {
   const [loading, data] = useSupabase<ITextContent[]>("TextContent");

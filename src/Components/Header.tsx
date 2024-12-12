@@ -1,9 +1,9 @@
 import plumbingImg from "./../img/plumbing-840835_1920.jpg";
-import { Nav } from "./Navbar";
-import { Logo } from "./Logo";
-import { Button } from "./Button";
+import Button from "./Button";
+import Logo from "./Logo";
+import Nav from "./Nav";
 
-export const Header = () => {
+const Header = () => {
   return (
     <>
       <div className="sticky top-0 z-[1] mx-auto bg-white flex justify-between px-4 py-3 shadow-md">
@@ -21,3 +21,4 @@ export const Header = () => {
     </>
   );
 };
+export default Header;

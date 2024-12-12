@@ -1,7 +1,7 @@
-import { IServiceContent } from "../models/IServiceContent";
-import { useSupabase } from "../hooks/useSupabase";
-import { ContactInfo } from "../components/ContactInfo";
-import { Title } from "../components/Title";
+import ContactInfo from "../components/ContactInfo";
+import useSupabase from "../hooks/useSupabase";
+import Title from "../components/Title";
+import IServiceContent from "../models/IServiceContent";
 
 export const Services = () => {
   const [loading, data] = useSupabase<IServiceContent[]>("ServiceContent");

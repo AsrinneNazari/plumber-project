@@ -7,7 +7,7 @@ interface IButtonProps {
   click?: () => void;
 }
 
-export const Button = ({ buttonText, type, to, click }: IButtonProps) => {
+const Button = ({ buttonText, type, to, click }: IButtonProps) => {
   const buttonStyle =
     "w-32 max-w-fit sm:w-auto inline-flex justify-center rounded bg-blue px-5 py-2 text-sm font-sans shadow-sm hover:bg-darkblue";
 
@@ -27,3 +27,5 @@ export const Button = ({ buttonText, type, to, click }: IButtonProps) => {
     </>
   );
 };
+
+export default Button;

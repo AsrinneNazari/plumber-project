@@ -1,11 +1,11 @@
-import { Button } from "./Button";
+import Button from "./Button";
 
 interface IModalProps {
   show: boolean;
   onClose: () => void;
 }
 
-export const ConfirmationModal = ({ show, onClose }: IModalProps) => {
+const ConfirmationModal = ({ show, onClose }: IModalProps) => {
   if (!show) return null;
 
   return (
@@ -20,3 +20,4 @@ export const ConfirmationModal = ({ show, onClose }: IModalProps) => {
     </div>
   );
 };
+export default ConfirmationModal;

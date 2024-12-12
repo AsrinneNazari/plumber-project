@@ -1,4 +1,4 @@
-import { Button } from "../components/Button";
+import Button from "../components/Button";
 import leakingPipe from "./../img/leakingPipe.png";
 
 export const Notfound = () => {
