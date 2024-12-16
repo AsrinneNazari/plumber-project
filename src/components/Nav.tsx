@@ -6,7 +6,7 @@ interface INavLinkProps {
   click: () => void;
 }
 
-export const NavLinks = ({ click }: INavLinkProps) => {
+const NavLinks = ({ click }: INavLinkProps) => {
   return (
     <>
       <NavLink
@@ -34,7 +34,7 @@ export const NavLinks = ({ click }: INavLinkProps) => {
   );
 };
 
-export const Nav = () => {
+const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleBar = () => {

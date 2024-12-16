@@ -1,7 +1,7 @@
 import Button from "../components/Button";
 import leakingPipe from "./../img/leakingPipe.png";
 
-export const NotFound = () => {
+const NotFound = () => {
   return (
     <>
       <div className="p-5 sm:p-5 mx-auto max-w-3xl flex flex-col lg:flex-col gap-10">
