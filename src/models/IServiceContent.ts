@@ -1,4 +1,4 @@
-export interface IServiceContent {
+interface IServiceContent {
   id: number;
   title: string;
   description: string;

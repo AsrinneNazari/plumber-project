@@ -5,7 +5,7 @@ interface IModalProps {
   onClose: () => void;
 }
 
-export const ConfirmationModal = ({ show, onClose }: IModalProps) => {
+const ConfirmationModal = ({ show, onClose }: IModalProps) => {
   if (!show) return null;
 
   return (

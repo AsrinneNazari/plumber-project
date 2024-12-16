@@ -3,10 +3,11 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
-import Layout from "./pages/Layout";
 
-export const router = createBrowserRouter([
+import Layout from "./pages/Layout";
+import NotFound from "./pages/Notfound";
+
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,

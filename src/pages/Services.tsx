@@ -3,7 +3,7 @@ import useSupabase from "../hooks/useSupabase";
 import Title from "../components/Title";
 import IServiceContent from "../models/IServiceContent";
 
-export const Services = () => {
+const Services = () => {
   const [loading, data] = useSupabase<IServiceContent[]>("ServiceContent");
 
   return (
