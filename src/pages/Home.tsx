@@ -2,6 +2,7 @@ import LSlogo from "./../img/LFlogo.png";
 import Title from "../components/Title";
 import useSupabase from "../hooks/useSupabase";
 import ITextContent from "../models/ITextContent";
+import { Mail, Phone } from "lucide-react";
 
 const Home = () => {
   const [loading, data] = useSupabase<ITextContent[]>("TextContent");
@@ -21,7 +22,21 @@ const Home = () => {
           <p className="font-semibold font-fjalla text-lx mb-3 text-2xl mt-8 ">
             Kontakta oss direkt
           </p>
-          <p className="font-bold">Telefonnummer: 070-1234567</p>
+          <div className="mt-5 flex items-center">
+    <Phone className="h-6" />
+    <p className="font-bold ml-2 text-lg">070-1234567</p>
+  </div>
+  <p className="mt-5">Allmänna frågor: </p>
+  <div className="mt-1 flex items-center">
+    <Mail className="h-5" />
+    <p className="font-bold ml-2">info@melloror.se</p>
+  </div>
+
+  <p className="mt-5">För ekonomifrågor:</p>
+  <div className="flex items-center mt-1">
+    <Mail className="h-5" />
+    <p className="font-bold ml-2">ekonomi@melloror.se</p>
+  </div>
         </div>
 
         <div className="flex-[2] order-2 lg:order-1">
