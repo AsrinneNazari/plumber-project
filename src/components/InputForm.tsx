@@ -25,10 +25,12 @@ const InputForm = () => {
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value } = e.target;
+    const { name, value } =
+      e.target; /* Destructures "name" (the field's name) and "value" (the current value of the field) from the event's target. */
     setInputValue((prev) => ({
-      ...prev,
-      [name]: value,
+      ...prev /*  Copies the previous state (inputValue) to preserve values from other fields. */,
+      [name]:
+        value /* Updates only the field that matches the "name" attribute with the new value. */,
     }));
   };
 
