@@ -19,7 +19,8 @@ The goal is to enhance my skills as a frontend developer and deliver a fully fun
 The website will serve as a resource for homeowners and property managers looking for plumbing services. It will provide clear information about the company, showcase its services, and include a contact form to make it easy for users to request help.
 
 <h2>Site map</h2>
-![image](https://github.com/user-attachments/assets/69a81e7d-e6e4-4969-a9ac-5283262f7b69)
+
+![sitemap](https://github.com/user-attachments/assets/1dc4cd9a-475f-4a59-898e-d8d1207779f8)
 
 
 
