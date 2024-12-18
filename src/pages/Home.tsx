@@ -29,13 +29,13 @@ const Home = () => {
           <p className="mt-5">Allmänna frågor: </p>
           <div className="mt-1 flex items-center">
             <Mail className="h-5" />
-            <p className="font-bold ml-2">info@melloror.se</p>
+            <p className="font-bold ml-2"><a href="mailto:info@melloror.se">info@melloror.se</a></p>
           </div>
 
           <p className="mt-5">För ekonomifrågor:</p>
           <div className="flex items-center mt-1">
             <Mail className="h-5" />
-            <p className="font-bold ml-2">ekonomi@melloror.se</p>
+            <p className="font-bold ml-2"><a href="mailto:ekomoni@melloror.se">ekonomi@melloror.se</a></p>
           </div>
         </div>
 
