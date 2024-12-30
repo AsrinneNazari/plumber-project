@@ -15,7 +15,7 @@ const Header = () => {
         style={{ backgroundImage: `url(${plumbingImg})` }}
       >
         <div className="flex justify-center items-center h-2/3">
-          <NavLink to="/contact" className="w-40 sm:w-auto inline-flex justify-center rounded bg-white px-6 py-3 text-lg font-semibold font-sans shadow-sm hover:bg-gray-100 whitespace-nowrap">Kontakta oss</NavLink>
+          <NavLink to="/contact" className="px-8 py-4 bg-white text-black text-lg font-sans rounded transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg hover:bg-gray-100">Kontakta oss</NavLink>
         </div>
       </header>
     </>
