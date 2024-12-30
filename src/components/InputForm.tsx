@@ -42,7 +42,7 @@ const InputForm = () => {
       return;
     }
 
-    emailjs
+    emailjs /* Connection with emailjs */
       .sendForm(
         import.meta.env.VITE_EMAIL_SERVICE_ID,
         import.meta.env.VITE_EMAIL_TEMPLATE_ID,
@@ -60,8 +60,8 @@ const InputForm = () => {
       );
 
     const { name, email, number, message } = inputValue;
-    try {
-      const { data, error } = await supabase
+    try { 
+      const { data, error } = await supabase /* Supabase connection */
         .from("FormSubmissions")
         .insert({ name: name, email: email, number: number, message: message })
         .select();
