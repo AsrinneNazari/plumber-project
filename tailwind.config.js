@@ -6,6 +6,7 @@ export default {
       colors: {
         blue: "#1fb6ff",
         darkblue: "#1f9eff",
+        linkblue: "#0f0f6f",
       },
       fontFamily: {
         sans: ["sans-serif"],

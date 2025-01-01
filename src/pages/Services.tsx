@@ -9,7 +9,9 @@ const Services = () => {
   return (
     <>
       <div className="p-5 sm:p-5 mx-auto max-w-7xl flex flex-col lg:flex-row gap-10">
-        <ContactInfo />
+        <div className="flex-[1] border-l-2 border-lightgray pt-10 pb-8 pl-9 order-1 lg:order-2">
+          <ContactInfo />
+        </div>
         <div className="flex-[2] order-2 lg:order-1">
           <Title titleText="Våra tjänster" />
           <div className="max-w-xl">

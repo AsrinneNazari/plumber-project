@@ -2,7 +2,7 @@ import LSlogo from "./../img/LFlogo.png";
 import Title from "../components/Title";
 import useSupabase from "../hooks/useSupabase";
 import ITextContent from "../models/ITextContent";
-import { Mail, Phone } from "lucide-react";
+import ContactInfo from "../components/ContactInfo";
 
 const Home = () => {
   const [loading, data] = useSupabase<ITextContent[]>("TextContent");
@@ -19,24 +19,7 @@ const Home = () => {
             kund extra trygghet vid varje uppdrag.
           </p>
           <img src={LSlogo} alt="Länsförsäkringar" className="w-40" />
-          <p className="font-semibold font-fjalla text-lx mt-9 mb-3 text-2xl">
-            Kontakta oss direkt
-          </p>
-          <div className="mt-5 flex items-center">
-            <Phone className="h-6" />
-            <p className="font-bold ml-2 text-lg">070-1234567</p>
-          </div>
-          <p className="mt-5">Allmänna frågor: </p>
-          <div className="mt-1 flex items-center">
-            <Mail className="h-5" />
-            <p className="font-bold ml-2"><a href="mailto:info@melloror.se">info@melloror.se</a></p>
-          </div>
-
-          <p className="mt-5">För ekonomifrågor:</p>
-          <div className="flex items-center mt-1">
-            <Mail className="h-5" />
-            <p className="font-bold ml-2"><a href="mailto:ekomoni@melloror.se">ekonomi@melloror.se</a></p>
-          </div>
+          <ContactInfo />
         </div>
 
         <div className="flex-[2] order-2 lg:order-1">
