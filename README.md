@@ -20,7 +20,7 @@ The website will serve as a resource for homeowners and property managers lookin
 
 <h2>Site map</h2>
 
-![sitemap](https://github.com/user-attachments/assets/1dc4cd9a-475f-4a59-898e-d8d1207779f8)
+![sitemap](https://github.com/user-attachments/assets/fc1dee30-154d-4100-bc8a-a5e3dcbc0464)
 
 <h2>Tech stack</h2>
 <h3>Programming Languages/Frameworks:</h3>
@@ -35,7 +35,6 @@ Netlify was used to deploy the frontend, offering fast and reliable hosting. As 
 <h3>Development Configuration:</h3>
 Using ESLint and Prettier ensured consistent code quality and style. 
 Vite provided a fast and optimized development environment. I had used it before in school projects, so it was a familiar tool.
-
 <h3>Graphics:</h3>
 I used Lucide for the icon part. The styling was finalized using Tailwind. Tailwind was very easy after I read the documentation and experimented with writing everything in the class names.
 
