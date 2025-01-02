@@ -16,6 +16,7 @@ const InputForm = () => {
   };
   const [inputValue, setInputValue] = useState(startInput);
   const [showModal, setShowModal] = useState(false);
+  const [errorText, setErrorText] = useState("");
   const form = useRef<HTMLFormElement | null>(null);
 
   const onClose = () => {
@@ -36,6 +37,11 @@ const InputForm = () => {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if(inputValue.number.length !==10){
+      setErrorText("Telefonnumret måste vara exakt 10 siffror.");
+      return;
+    }
 
     if (!form.current) {
       console.log("error!");
@@ -69,6 +75,7 @@ const InputForm = () => {
       console.log("Data lagrad:", data);
       setShowModal(true);
       setInputValue(startInput);
+      setErrorText("");
     } catch (error) {
       console.error("Något gick fel", error);
     }
@@ -118,6 +125,7 @@ const InputForm = () => {
                     className="block w-full rounded-md shadow-md ring-1 ring-gray-400 focus-within:ring-1 focus-within:ring-indigo-500 sm:max-w-md p-2"
                   />
                 </div>
+                {errorText && <div className="text-red-500 mt-2">{errorText}</div>}
               </div>
 
               <div>
