@@ -24,18 +24,16 @@ const Services = () => {
             ))}} */}
             <section className="mb-4">
               <p className="text-lg font-semibold">Stambyte </p>
-              Vi på Mello Rör AB erbjuder professionella och tryggt utförda
-              stambyten för både privatpersoner och fastighetsägare. Ett
-              stambyte innebär att vi byter ut gamla och slitna rör och
-              ledningar i fastigheten för att säkerställa att vatten- och
-              avloppssystem fungerar som de ska. Detta är en viktig åtgärd för
-              att förebygga framtida vattenskador och förlänga livslängden på
-              fastighetens VVS-system.
+              Vi erbjuder professionella och tryggt utförda stambyten för både
+              privatpersoner och fastighetsägare. Ett stambyte innebär att vi
+              byter ut gamla och slitna rör och ledningar i fastigheten för att
+              säkerställa att vatten- och avloppssystem fungerar som de ska.
+              Detta är en viktig åtgärd för att förebygga framtida vattenskador
+              och förlänga livslängden på fastighetens VVS-system.
             </section>
             <section className="mb-4">
               <p className="text-lg font-semibold">Varmvattenberedare </p>
-              Installation och service av varmvattenberedare Vi på Mello Rör AB
-              erbjuder installation, service och reparation av
+              Vi erbjuder installation, service och reparation av
               varmvattenberedare för både hushåll och företag. Oavsett om du
               behöver en ny varmvattenberedare eller vill optimera din
               befintliga, hjälper vi dig att hitta den bästa lösningen för dina
