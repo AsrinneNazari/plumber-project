@@ -33,11 +33,12 @@ const Home = () => {
               </p>
             ))}
             <p className="text-lg font-semibold">Om oss</p>
-            {data?.map((item, index) => (
+            {/* {data?.map((item, index) => (
               <section className="mb-4" key={index}>
                 {item.title === "about" ? item.content : null}
               </section>
-            ))}
+            ))} */}
+            Info kommer snart..
           </div>
         </div>
       </div>
